@@ -1,0 +1,55 @@
+step 1 - planning
+Explain how to convert this CRUD API into an 
+AI-powered task manager with prioritization, summarization, 
+and automation.
+
+step 2 - refactoring
+Refactor this FastAPI project into a scalable architecture:
+- Separate routes, services, models, schemas
+- Add Pydantic validation
+- Add database layer using SQLite + SQLAlchemy
+- Follow clean architecture
+- Keep it production-ready
+
+step 3 - adding AI features
+feature 1- Auto Task Breakdown
+Add a new endpoint /ai/generate-tasks
+
+Input: a goal (string)
+Output: list of structured tasks
+
+Use Groq API to:
+- break goal into actionable tasks
+- assign priority
+- add estimated time
+
+feature 2 - Feature 2: Smart Prioritization
+Enhance task creation:
+- automatically assign priority (high, medium, low)
+- based on urgency and importance
+
+Feature 3: Task Summarization
+Add endpoint /ai/summarize
+
+Input: list of tasks
+Output: summary + daily plan
+
+step 4 - Multi-step Agent
+
+Create an agent workflow:
+
+Step 1: Take user goal
+Step 2: Generate tasks
+Step 3: Prioritize tasks
+Step 4: Store in database
+Step 5: Return execution plan
+
+Use async orchestration
+
+step 5 - Create a Dockerfile for this FastAPI app
+
+step 6 - deployment on render
+Generate deployment steps for Render including:
+- requirements.txt
+- start command
+- environment variables
